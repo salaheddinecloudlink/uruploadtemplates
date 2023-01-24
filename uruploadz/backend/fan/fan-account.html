@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" type="image/png" sizes="16x16" href="../plugins/images/logo-icon.png">
+    <title>Uruploadz.com</title>
+    <!-- Bootstrap Core CSS -->
+    <link href="../bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../plugins/bower_components/bootstrap-extension/css/bootstrap-extension.css" rel="stylesheet">
+    <!-- Menu CSS -->
+    <link href="../plugins/bower_components/sidebar-nav/dist/sidebar-nav.min.css" rel="stylesheet">
+    <link href="../plugins/bower_components/bootstrap-datepicker/bootstrap-datepicker.min.css" rel="stylesheet"
+        type="text/css" />
+    <link rel="stylesheet" href="../js/select2/dist/css/select2.min.css">
+    <!-- animation CSS -->
+    <link href="../css/animate.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="../css/multi-select.css" rel="stylesheet">
+    <link href="../css/style.css" rel="stylesheet">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+
+<body class="fix-sidebar fix-header">
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="cssload-speeding-wheel"></div>
+    </div>
+    <div id="wrapper">
+        <!-- Navigation -->
+        <nav class="navbar navbar-default navbar-static-top m-b-0">
+            <div class="navbar-header"> <a class="navbar-toggle hidden-sm hidden-md hidden-lg "
+                    href="javascript:void(0)" data-toggle="collapse" data-target=".navbar-collapse"><i
+                        class="ti-menu"></i></a>
+                <div class="top-left-part d-flex align-items-center justify-content-center">
+                    <a class="logo" href="./index.html">
+                        <!-- <b><img src="plugins/images/logo-icon.png" alt="home" /></b> -->
+                        <span class="hidden-xs"><strong><img src="../plugins/images/logo.png" class="nav-brand"
+                                    alt=""></strong></span>
+                    </a>
+                </div>
+                <ul class="nav navbar-top-links navbar-left hidden-xs">
+                    <li><a href="javascript:void(0)" class="open-close hidden-xs waves-effect waves-light"><i
+                                class="icon-arrow-left-circle ti-menu"></i></a></li>
+
+                </ul>
+                <div class="center-logo"
+                    style="position:absolute; left:0; right:0; top:10px; width: 200px; margin:0 auto">
+                    <img src="../plugins/images/logo.png" alt="" width="200">
+                </div>
+                <ul class="nav navbar-top-links navbar-right pull-right">
+                    <li style="margin-right: 15px;">
+                        <form role="search" class="app-search hidden-xs">
+                            <input type="text" placeholder="Search..." class="form-control"> <a href=""><i
+                                    class="fa fa-search"></i></a>
+                        </form>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-header -->
+            <!-- /.navbar-top-links -->
+            <!-- /.navbar-static-side -->
+        </nav>
+        <!-- Left navbar-header -->
+        <div class="navbar-default sidebar" role="navigation">
+
+            <div class="sidebar-nav navbar-collapse slimscrollsidebar">
+
+                <div class="user-profile m-t-20 text-center">
+                    <div class="user-pro-body">
+                        <div class="dropdown">
+                            <a class="bg-white text-center m-t-15">
+                                <img src="../plugins/images/users/1.jpg" width="50" height="50" alt="user-img"
+                                    class="m-b-5 img-circle">
+                                <p class="hide-menu mb-0" style="color: #54667a;">Steve Gection</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <ul class="nav" id="side-menu">
+                    <li class="sidebar-search hidden-sm hidden-md hidden-lg">
+                        <!-- input-group -->
+                        <div class="input-group custom-search-form">
+                            <input type="text" class="form-control" placeholder="Search..."> <span
+                                class="input-group-btn">
+                                <button class="btn btn-default" type="button"> <i class="fa fa-search"></i> </button>
+                            </span>
+                        </div>
+                        <!-- /input-group -->
+                    </li>
+                    <li>
+                        <a href="./index.html" class="waves-effect"><i class="ti-user p-r-10"></i> <span
+                                class="hide-menu"> Profile</span></a>
+                    </li>
+                    <li>
+                        <a href="./fan-videos.html" class="waves-effect"><i class="ti-video-camera p-r-10"></i> <span
+                                class="hide-menu"> Videos </span></a>
+                    </li>
+                    <li>
+                        <a href="./fan-song.html" class="waves-effect"><i class="ti-music-alt p-r-10"></i> <span
+                                class="hide-menu"> Music </span></a>
+                    </li>
+                    <li>
+                        <a href="./fan-album.html" class="waves-effect"><i class="ti-microphone p-r-10"></i> <span
+                                class="hide-menu"> Album</span></a>
+                    </li>
+                    <li>
+                        <a href="./fan-discussion.html" class="waves-effect"><i class="ti-calendar p-r-10"></i> <span
+                                class="hide-menu"> Discussion</span></a>
+                    </li>
+                    <li>
+                        <a href="./fan-followers.html" class="waves-effect"><i class="ti-face-smile p-r-10"></i> <span
+                                class="hide-menu"> Followers</span></a>
+                    </li>
+                    <li>
+                        <a href="./fan-activities.html" class="waves-effect"><i class="ti-view-grid p-r-10"></i> <span
+                                class="hide-menu"> Activities</span></a>
+                    </li>
+                    <li>
+                        <a href="./fan-account.html" class="waves-effect"><i class="ti-settings p-r-10"></i> <span
+                                class="hide-menu"> Account Setting</span></a>
+                    </li>
+                    <li>
+                        <a href="#" class="waves-effect"><i class="ti-upload  p-r-10"></i> <span class="hide-menu">Terms
+                                of use</span></a>
+                    </li>
+
+
+                    <li>
+                        <a href="#" class="waves-effect"><i class="ti-power-off p-r-10"></i> <span
+                                class="hide-menu">Sign out</span></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- Left navbar-header end -->
+        <!-- Page Content -->
+        <div id="page-wrapper">
+            <div class="container-fluid">
+                <div class="row bg-title">
+                    <div class="col-xs-12">
+                        <h4 class="page-title">Activities</h4>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="white-box">
+                            <div class="max-width-auto" style="max-width: 1100px;">
+                                <div class="d-flex align-items-center justify-content-center">
+                                    <ul class="nav m-t-0 nav-tabs nav-justified my_tab my_tab2" role="tablist">
+                                        <li role="presentation" class="nav-item active">
+                                            <a href="#history" style="margin-bottom: 0 !important;" class="nav-link"
+                                                aria-controls="home" role="tab" data-toggle="tab"
+                                                aria-expanded="true"><span class="visible-xs"><i
+                                                        class="fa fa-archive"></i></span><span class="hidden-xs">
+                                                    Email Notification</span></a>
+                                        </li>
+                                        <li role="presentation" class="nav-item">
+                                            <a href="#upgrade" style="margin-bottom: 0 !important;" class="nav-link"
+                                                aria-controls="home" role="tab" data-toggle="tab"
+                                                aria-expanded="true"><span class="visible-xs"><i
+                                                        class="fa fa-lock"></i></span><span class="hidden-xs">
+                                                    Change Password</span></a>
+                                        </li>
+                                        <li role="presentation" class="nav-item">
+                                            <a href="#payment" style="margin-bottom: 0 !important;" class="nav-link"
+                                                aria-controls="home" role="tab" data-toggle="tab"
+                                                aria-expanded="true"><span class="visible-xs"><i
+                                                        class="fa fa-times"></i></span><span class="hidden-xs">
+                                                    Delete Account</span></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="tab-content">
+                                    <div class="tab-pane active p-b-40" id="history">
+                                        <div class="table-responsive m-b-10">
+                                            <table class="table table-bordered text-nowrap align-middle">
+                                                <tbody>
+                                                    <tr>
+                                                        <td>Email About Videos Posted by Artist your Follow</td>
+                                                        <td>
+                                                            <div class="col-md-12">
+                                                                <input type="radio" id="chkYes" name="chkPassPort"
+                                                                    checked>
+                                                                Yes
+                                                                <input type="radio" id="chkNo" name="chkPassPort"
+                                                                    class="m-l-10">
+                                                                No
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+
+                                                    <tr>
+                                                        <td>Email About Music Posted by Artist your Follow</td>
+                                                        <td>
+                                                            <div class="col-md-12">
+                                                                <input type="radio" id="chkYes2" name="chkPassPort2"
+                                                                    checked>
+                                                                Yes
+                                                                <input type="radio" id="chkNo2" name="chkPassPort2"
+                                                                    class="m-l-10">
+                                                                No
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+
+                                                    <tr>
+                                                        <td>Email About News Posted by Artist your Follow</td>
+                                                        <td>
+                                                            <div class="col-md-12">
+                                                                <input type="radio" id="chkYes3" name="chkPassPort3"
+                                                                    checked>
+                                                                Yes
+                                                                <input type="radio" id="chkNo3" name="chkPassPort3"
+                                                                    class="m-l-10">
+                                                                No
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+
+                                                    <tr>
+                                                        <td>Reminder Emails</td>
+                                                        <td>
+                                                            <div class="col-md-12">
+                                                                <input type="radio" id="chkYes4" name="chkPassPort4"
+                                                                    checked>
+                                                                Yes
+                                                                <input type="radio" id="chkNo4" name="chkPassPort4"
+                                                                    class="m-l-10">
+                                                                No
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+
+                                                    <tr>
+                                                        <td>Get notifications you may have missed.</td>
+                                                        <td>
+                                                            <div class="col-md-12">
+                                                                <input type="radio" id="chkYes5" name="chkPassPort5"
+                                                                    checked>
+                                                                Yes
+                                                                <input type="radio" id="chkNo5" name="chkPassPort5"
+                                                                    class="m-l-10">
+                                                                No
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Promotion Emails</td>
+                                                        <td>
+                                                            <div class="col-md-12">
+                                                                <input type="radio" id="chkYes6" name="chkPassPort6"
+                                                                    checked>
+                                                                Yes
+                                                                <input type="radio" id="chkNo6" name="chkPassPort6"
+                                                                    class="m-l-10">
+                                                                No
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Get tips about Uruploadz”s Tools.</td>
+                                                        <td>
+                                                            <div class="col-md-12">
+                                                                <input type="radio" id="chkYes7" name="chkPassPort7"
+                                                                    checked>
+                                                                Yes
+                                                                <input type="radio" id="chkNo7" name="chkPassPort7"
+                                                                    class="m-l-10">
+                                                                No
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>News Emails</td>
+                                                        <td>
+                                                            <div class="col-md-12">
+                                                                <input type="radio" id="chkYes8" name="chkPassPort8"
+                                                                    checked>
+                                                                Yes
+                                                                <input type="radio" id="chkNo8" name="chkPassPort8"
+                                                                    class="m-l-10">
+                                                                No
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Learn about new Features on Uruploadz</td>
+                                                        <td>
+                                                            <div class="col-md-12">
+                                                                <input type="radio" id="chkYes9" name="chkPassPort9"
+                                                                    checked>
+                                                                Yes
+                                                                <input type="radio" id="chkNo9" name="chkPassPort9"
+                                                                    class="m-l-10">
+                                                                No
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Get Reminders about your favorite Artist Activities.</td>
+                                                        <td>
+                                                            <div class="col-md-12">
+                                                                <input type="radio" id="chkYes0" name="chkPassPort0"
+                                                                    checked>
+                                                                Yes
+                                                                <input type="radio" id="chkNo0" name="chkPassPort0"
+                                                                    class="m-l-10">
+                                                                No
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Learn about new Features on Uruploadz</td>
+                                                        <td>
+                                                            <div class="col-md-12">
+                                                                <input type="radio" id="chkYes11" name="chkPassPort11"
+                                                                    checked>
+                                                                Yes
+                                                                <input type="radio" id="chkNo11" name="chkPassPort11"
+                                                                    class="m-l-10">
+                                                                No
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Pause All</td>
+                                                        <td>
+                                                            <div class="col-md-12">
+                                                                <input type="radio" id="chkYes12" name="chkPassPort12">
+                                                                Yes
+                                                                <input type="radio" id="chkNo12" name="chkPassPort12"
+                                                                    class="m-l-10" checked>
+                                                                No
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <div>
+                                            <div class="pull-right">
+                                                <button class="btn btn-success">Update</button>
+                                                <button class="btn btn-dark">Cancel</button>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="tab-pane" id="upgrade">
+                                        <form class="form-material form-horizontal">
+
+                                            <div class="d-flex justify-content-center">
+                                                <div class="password-form">
+                                                    <div class="row">
+                                                        <div class="col-sm-12">
+                                                            <div class="form-group">
+                                                                <label class="col-md-12" for="example-text">Old Password
+                                                                    <span class="text-danger">*</span></label>
+                                                                <div class="col-md-12">
+                                                                    <input type="text" required="" id="example-text"
+                                                                        name="example-text" class="form-control">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-sm-12">
+                                                            <div class="form-group">
+                                                                <label class="col-md-12" for="example-text">New Password
+                                                                    <span class="text-danger">*</span></label>
+                                                                <div class="col-md-12">
+                                                                    <input type="text" required="" id="example-text"
+                                                                        name="example-text" class="form-control">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-sm-12">
+                                                            <div class="form-group">
+                                                                <label class="col-md-12" for="example-text">Confirm
+                                                                    Password <span class="text-danger">*</span></label>
+                                                                <div class="col-md-12">
+                                                                    <input type="text" required="" id="example-text"
+                                                                        name="example-text" class="form-control">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <button type="submit"
+                                                        class="btn btn-success save-btn waves-effect waves-light m-r-10">Submit</button>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+
+                                    <div class="tab-pane" id="payment">
+                                        <div class="row justify-content-center m-b-20">
+                                            <div class="col-lg-9 col-md-10 col-sm-12">
+                                                <div class="card" style="background: #f7fafc;">
+                                                    <div class="card-body p-5">
+                                                        <div
+                                                            class="free-package m-b-20 align-items-center justify-content-between">
+                                                            <div>
+                                                                <h2 class="font-bold m-t-0 m-b-0 ">Are you sure you want
+                                                                    to delete your account ?
+                                                                </h2>
+                                                            </div>
+
+                                                        </div>
+                                                        <p>
+                                                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                                            Quidem rerum consectetur nihil beatae quo dolores mollitia
+                                                            quos tempore, architecto enim at neque officia.
+                                                        </p>
+                                                        <div class="m-t-30">
+                                                            <a href="#upgrade" class="btn btn-inverse">Delete
+                                                                Account</a>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /.container-fluid -->
+            <footer class="footer">
+                <div class="row">
+                    <div class="col-lg-2 col-md-12 col-sm-12 m-b-40">
+                        <div class="d-flex align-items-center justify-content-center">
+                            <div>
+                                <img src="../../images/logo.png" class="img-responsive home-logo" alt="">
+                            </div>
+                        </div>
+                        <div class="text-center m-t-20">
+                            <div class="text-center artist-social">
+                                <a href="javascript: void(0);" class="footer-icon"><i
+                                        class="fa fa-facebook fa-2x"></i></a>
+                                <a href="javascript: void(0);" class="footer-icon"><i
+                                        class="fa fa-twitter fa-2x"></i></a>
+                                <a href="javascript: void(0);" class="footer-icon"><i
+                                        class="fa fa-instagram fa-2x"></i></a>
+                                <a href="javascript: void(0);" class="footer-icon"><i
+                                        class="fa fa-youtube-play fa-2x"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-2 col-md-2 col-sm-6 col-xs-6 col-6 m-b-20">
+                        <ul class="firstChild">
+                            <li class="pb-2"><a href="javascript: void(0);"
+                                    class="fs-16 text-white footer-link">Home</a></li>
+                            <li class="pb-2"><a href="javascript: void(0);"
+                                    class="fs-16 text-white footer-link">Events</a></li>
+                            <li class="pb-2"><a href="javascript: void(0);"
+                                    class="fs-16 text-white footer-link">Artist</a>
+                            </li>
+                            <li><a href="javascript: void(0);" class="fs-16 text-white footer-link">About Us</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-2 col-md-2 col-sm-6 col-xs-6 col-6 m-b-20">
+                        <ul>
+                            <li class="pb-2"><a href="javascript: void(0);"
+                                    class="fs-16 text-white footer-link">News</a></li>
+                            <li class="pb-2"><a href="javascript: void(0);"
+                                    class="fs-16 text-white footer-link">Music</a></li>
+                            <li class="pb-2"><a href="javascript: void(0);"
+                                    class="fs-16 text-white footer-link">Fans</a></li>
+                            <li><a href="javascript: void(0);" class="fs-16 text-white footer-link">Discussion</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-2 col-md-3 col-sm-6 col-xs-6 col-6 m-b-20">
+                        <ul>
+                            <li class="pb-2"><a href="javascript: void(0);"
+                                    class="fs-16 text-white footer-link">Advertise With
+                                    Us</a>
+                            </li>
+                            <li class="pb-2"><a href="javascript: void(0);"
+                                    class="fs-16 text-white footer-link">Privacy</a>
+                            </li>
+                            <li class="pb-2"><a href="javascript: void(0);"
+                                    class="fs-16 text-white footer-link">Copyright</a>
+                            </li>
+                            <li class="pb-2"><a href="javascript: void(0);"
+                                    class="fs-16 text-white footer-link">Featured</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-2 col-md-2 col-sm-6 col-xs-6 col-6 m-b-20">
+                        <ul>
+                            <li class="pb-2"><a href="javascript: void(0);"
+                                    class="fs-16 text-white footer-link">Refunds</a>
+                            </li>
+                            <li class="pb-2"><a href="javascript: void(0);"
+                                    class="fs-16 text-white footer-link">Privacy</a>
+                            </li>
+                            <li><a href="javascript: void(0);" class="fs-16 text-white footer-link">Trademark</a></li>
+                            <li><a href="javascript: void(0);" class="fs-16 text-white footer-link">Faq</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-2 col-md-2 col-sm-6 col-xs-6 col-6 m-b-20">
+                        <ul>
+                            <li class="pb-2"><a href="javascript: void(0);"
+                                    class="fs-16 text-white footer-link">Pricing</a>
+                            </li>
+                            <li class="pb-2"><a href="javascript: void(0);" class="fs-16 text-white footer-link">Event
+                                    finder</a>
+                            </li>
+                            <li class="pb-2"><a href="javascript: void(0);" class="fs-16 text-white footer-link">Contact
+                                    Us</a>
+                            </li>
+                            <li><a href="javascript: void(0);" class="fs-16 text-white footer-link">Terms Of Use</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </footer>
+        </div>
+        <!-- /#page-wrapper -->
+    </div>
+    <!-- /#wrapper -->
+    <!-- jQuery -->
+    <script src="../plugins/bower_components/jquery/dist/jquery.min.js"></script>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="../bootstrap/dist/js/tether.min.js"></script>
+    <script src="../bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="../plugins/bower_components/bootstrap-extension/js/bootstrap-extension.min.js"></script>
+    <!-- Menu Plugin JavaScript -->
+    <script src="../plugins/bower_components/sidebar-nav/dist/sidebar-nav.min.js"></script>
+    <script src="../js/select2/dist/js/select2.full.min.js"></script>
+    <!--slimscroll JavaScript -->
+    <script src="../js/jquery.slimscroll.js"></script>
+    <!--Wave Effects -->
+    <script src="../js/waves.js"></script>
+    <!-- Date Picker Plugin JavaScript -->
+    <script src="../plugins/bower_components/bootstrap-datepicker/bootstrap-datepicker.min.js"></script>
+    <script type="text/javascript">
+        // Date Picker
+        jQuery('.mydatepicker').datepicker();
+        $(".select2").select2();
+        // $(".selectpicker").selectpicker();
+    </script>
+    <!-- Custom Theme JavaScript -->
+    <script src="../js/custom.min.js"></script>
+
+
+</body>
+
+</html>

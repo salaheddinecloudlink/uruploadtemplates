@@ -1,0 +1,334 @@
+/*------------------ Style tabs ------------------*/
+
+@import "variables.less";
+
+.list-style-none {
+    margin: 0px;
+    padding: 0px;
+    li {
+        list-style: none;
+        margin: 0px;
+        &.box-label a {
+            font-weight: 500;
+        }
+        &.divider {
+            margin: 10px 0;
+            height: 1px;
+            background: @border;
+        }
+        a {
+            padding: 15px 10px;
+            display: block;
+            color: @bodytext;
+            &:hover {
+                color: @themecolor;
+            }
+            span {
+                float: right;
+            }
+        }
+    }
+}
+
+/*User Cards*/
+
+.el-element-overlay .white-box {
+    //padding: 0px;
+}
+
+.el-element-overlay .el-card-item {
+    position: relative;
+    padding-bottom: 25px;
+    .el-card-avatar {
+        margin-bottom: 15px;
+    }
+    .el-card-content {
+        text-align: center;
+        h3 {
+            margin: 0px;
+        }
+        a {
+            color: @bodytext;
+            &:hover {
+                color: @themecolor;
+            }
+        }
+    }
+    .el-overlay-1 {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        position: relative;
+        text-align: center;
+        cursor: default;
+        img {
+            display: block;
+            position: relative;
+            -webkit-transition: all .4s linear;
+            transition: all .4s linear;
+            width: 100%;
+            height: auto;
+        }
+        &:hover img {
+            -ms-transform: scale(1.2) translateZ(0);
+            -webkit-transform: scale(1.2) translateZ(0);
+            /* transform: scale(1.2) translateZ(0); */
+        }
+        .el-info {
+            text-decoration: none;
+            display: inline-block;
+            text-transform: uppercase;
+            color: @white;
+            background-color: transparent;
+            filter: alpha(opacity=0);
+            -webkit-transition: all .2s ease-in-out;
+            transition: all .2s ease-in-out;
+            padding: 0;
+            margin: auto;
+            position: absolute;
+            top: 50%;
+            left: 0;
+            right: 0;
+            transform: translateY(-50%) translateZ(0);
+            -webkit-transform: translateY(-50%) translateZ(0);
+            -ms-transform: translateY(-50%) translateZ(0);
+            >li {
+                list-style: none;
+                display: inline-block;
+                margin: 0 3px;
+                a {
+                    color: @muted;
+                    &:hover {
+                        color: @white
+                    }
+                }
+            }
+        }
+    }
+    .el-overlay {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        overflow: hidden;
+        top: 0;
+        left: 0;
+        opacity: 0;
+        background-color: rgba(0, 0, 0, .7);
+        -webkit-transition: all .4s ease-in-out;
+        transition: all .4s ease-in-out;
+    }
+    .el-overlay-1:hover .el-overlay {
+        opacity: 1;
+        filter: alpha(opacity=100);
+        -webkit-transform: translateZ(0);
+        -ms-transform: translateZ(0);
+        transform: translateZ(0);
+    }
+    .el-overlay-1 .scrl-dwn {
+        top: -100%;
+    }
+    .el-overlay-1 .scrl-up {
+        top: 100%;
+        height: 0px;
+    }
+    .el-overlay-1:hover .scrl-dwn {
+        top: 0px;
+    }
+    .el-overlay-1:hover .scrl-up {
+        top: 0px;
+        height: 100%;
+    }
+}
+
+/* Material Form Input Elements */
+
+.floating-labels .form-group {
+    position: relative;
+}
+
+.floating-labels .form-control {
+    font-size: 20px;
+    padding: 10px 10px 10px 0;
+    display: block;
+    border: none;
+    border-bottom: 1px solid @light;
+}
+
+.floating-labels select.form-control>option {
+    font-size: 14px;
+}
+
+.has-error .form-control {
+    border-bottom: 1px solid @danger;
+}
+
+.has-warning .form-control {
+    border-bottom: 1px solid @warning;
+}
+
+.has-success .form-control {
+    border-bottom: 1px solid @success;
+}
+
+.floating-labels .form-control:focus {
+    outline: none;
+    border: none;
+}
+
+.floating-labels label {
+    color: @bodytext;
+    font-size: 16px;
+    position: absolute;
+    cursor: auto;
+    top: 10px;
+    transition: 0.2s ease all;
+    -moz-transition: 0.2s ease all;
+    -webkit-transition: 0.2s ease all;
+}
+
+.floating-labels .form-control:focus~label,
+.floating-labels .form-control:valid~label {
+    top: -20px;
+    font-size: 12px;
+    color: @primary;
+}
+
+.floating-labels .bar {
+    position: relative;
+    display: block;
+}
+
+.floating-labels .bar:before,
+.floating-labels .bar:after {
+    content: '';
+    height: 2px;
+    width: 0;
+    bottom: 1px;
+    position: absolute;
+    background: @primary;
+    transition: 0.2s ease all;
+    -moz-transition: 0.2s ease all;
+    -webkit-transition: 0.2s ease all;
+}
+
+.floating-labels .bar:before {
+    left: 50%;
+}
+
+.floating-labels .bar:after {
+    right: 50%;
+}
+
+.floating-labels .form-control:focus~.bar:before,
+.floating-labels .form-control:focus~.bar:after {
+    width: 50%;
+}
+
+.floating-labels .highlight {
+    position: absolute;
+    height: 60%;
+    width: 100px;
+    top: 25%;
+    left: 0;
+    pointer-events: none;
+    opacity: 0.5;
+}
+
+.floating-labels .input-lg~label,
+.floating-labels .input-lg {
+    font-size: 24px;
+}
+
+.floating-labels .input-sm~label,
+.floating-labels .input-sm {
+    font-size: 16px;
+}
+
+.has-warning .bar:before,
+.has-warning .bar:after {
+    background: @warning;
+}
+
+.has-success .bar:before,
+.has-success .bar:after {
+    background: @success;
+}
+
+.has-error .bar:before,
+.has-error .bar:after {
+    background: @danger;
+}
+
+.has-warning .form-control:focus~label,
+.has-warning .form-control:valid~label {
+    color: @warning;
+}
+
+.has-success .form-control:focus~label,
+.has-success .form-control:valid~label {
+    color: @success;
+}
+
+.has-error .form-control:focus~label,
+.has-error .form-control:valid~label {
+    color: @danger;
+}
+
+.has-feedback label~.t-0 {
+    top: 0;
+}
+
+/* style for Music Demo */
+
+.el-card-item div.alb-info h5 {
+    margin: 10px 0px 0px 0px;
+}
+
+.el-card-item div.alb-info h6 {
+    margin: 5px 0px 10px 0px;
+}
+
+.el-element-overlay div.list-group .list-group-item {
+    border: none;
+}
+
+span.vd-time {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 6px 7px 3px;
+}
+
+.suggestion-sidebar div.row {
+    margin-bottom: 20px;
+}
+
+.suggestion-sidebar h5 a {
+    color: @dark;
+}
+
+ul.vd-details {
+    list-style: none;
+    padding-left: 0px;
+}
+
+ul.vd-details li {
+    display: inline-block;
+    padding-right: 20px;
+}
+
+ul.vd-details li a {
+    color: @bodytext;
+}
+
+.video-thumbnail,
+.album-cover {
+    max-width: 125px;
+}
+
+.video-listing .table th,
+.video-listing .table td,
+.album-listing .table th,
+.album-listing .table td {
+    vertical-align: middle;
+}

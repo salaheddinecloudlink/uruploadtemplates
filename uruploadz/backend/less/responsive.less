@@ -1,0 +1,249 @@
+/*For Laptop (1280px)*/
+
+@media(max-width:1350px) {}
+
+/*Small Desktop*/
+
+@media(min-width:1024px) {
+    .app-search .form-control:focus {
+        width: 300px;
+    }
+
+}
+
+/*Ipad*/
+
+@media(min-width:768px) {
+
+    #page-wrapper {
+        position: inherit;
+        margin: 0px 0 0px 220px;
+    }
+    .navbar-default {
+        position: relative;
+        width: 100%;
+        top: 0px;
+    }
+    .fix-header {
+        .navbar-static-top {
+            position: fixed;
+        }
+        #page-wrapper {
+            margin-top: 60px;
+        }
+    }
+    .sidebar {
+        z-index: 10;
+        position: absolute;
+        width: 220px;
+        padding-top: 60px;
+        height: 100%;
+
+    }
+
+    /*If body has fix sidebar class*/
+    .fix-sidebar {
+        .sidebar {
+            position: fixed;
+            overflow: hidden;
+
+        }
+        .top-left-part {
+            position: fixed;
+            width: 220px;
+
+        }
+        .navbar-left {
+            margin-left: 220px;
+        }
+
+    }
+    .footer {
+        left: 220px;
+    }
+
+    /*If body has content-wrapper*/
+    .content-wrapper {
+        #page-wrapper {
+            margin-left: 60px;
+        }
+        .navbar-left {
+            margin-left: 0px;
+        }
+        .footer {
+            left: 60px;
+        }
+        .sidebar {
+            width: 60px;
+
+            .hide-menu {
+                display: none;
+                width: 180px;
+                left: 60px;
+            }
+            .sidebar-nav {
+                position: absolute;
+                overflow: hidden;
+                .nav-second-level {
+                    position: absolute;
+                    z-index: 999999;
+                }
+            }
+            .nav-small-cap,
+            li span span {
+                display: none;
+            }
+
+            #side-menu > li:hover {
+                width: 300px;
+                background: @extralight;
+
+            }
+            li:hover .hide-menu {
+                display: inline;
+            }
+            #side-menu > li > a {
+                padding: 15px 17px 15px 20px;
+            }
+
+
+            li:hover .nav-second-level.in,
+            li:hover .nav-second-level,
+            li:hover .nav-second-level.collapse li {
+                display: block;
+
+            }
+            .nav-second-level {
+                position: absolute;
+                left: 60px;
+                background: @extralight;
+                width: 240px;
+                opacity: 1;
+                padding-bottom: 20px;
+                display: none;
+                li {
+                    background: @extralight;
+                }
+            }
+        }
+        .top-left-part {
+            width: 60px;
+
+        }
+    }
+    .navbar-top-links .dropdown-messages,
+    .navbar-top-links .dropdown-tasks,
+    .navbar-top-links .dropdown-alerts {
+        margin-left: auto;
+    }
+
+
+    .top-minus {
+        margin-top: -62px;
+        float: right;
+    }
+    .fix-sidebar.content-wrapper,
+    .content-wrapper.fix-sidebar {
+        .navbar-left {
+            margin-left: 60px!important;
+        }
+        .sidebar {
+            position: fixed;
+            .sidebar-nav {
+                position: absolute;
+                .nav-second-level {
+                    position: absolute;
+                    z-index: 99999;
+                }
+            }
+        }
+    }
+
+}
+
+@media (max-width:1024px) {
+    .b-r-none {
+        border-right: 0px;
+    }
+
+}
+
+/*Phone*/
+
+@media(max-width:767px) {
+    .navbar-top-links {
+        display: inline-block;
+        .profile-pic img {
+            margin-right: 0px;
+        }
+    }
+    .top-left-part {
+        width: 60px;
+    }
+    .navbar-top-links li:last-child {
+        margin-right: 0px;
+    }
+    .navbar-top-links .dropdown-messages,
+    .navbar-top-links .dropdown-tasks,
+    .navbar-top-links .dropdown-alerts {
+        width: 260px;
+
+    }
+    .row-in-br {
+        border-right: 0px;
+        border-bottom: 1px solid @border;
+    }
+    .bg-title {
+        .breadcrumb {
+            float: left;
+            margin-top: 0px;
+            margin-bottom: 10px;
+        }
+    }
+
+    /***** Start Update 1.5 *****/
+    .fix-header {
+        .navbar-static-top {
+            position: fixed;
+            top: 0px;
+            width: 100%;
+        }
+        #page-wrapper {
+            margin-top: 60px;
+        }
+        .sidebar {
+            position: fixed;
+
+            height: 350px;
+            top: 60px;
+            z-index: 100;
+            overflow: auto!important;
+            box-shadow: 0 10px 35px rgba(0, 0, 0, 0.2);
+        }
+    }
+    .mvdplayer .jp-title {
+        left: 9999px;
+    }
+
+    /***** Close Update 1.5 *****/
+    .table-responsive.pro-rd {
+        border: none;
+    }
+    .suggestion-sidebar div.row .mdmt {
+        margin-top: 20px
+    }
+    ul.vd-details li {
+        display: block;
+        padding-bottom: 10px;
+    }
+    span.vd-view {
+        float: left !important;
+    }
+    small.ar-name {
+        display: table;
+    }
+
+
+}
+
+@media(max-width:480px) {}
